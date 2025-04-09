@@ -4,13 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ambev.DeveloperEvaluation.Application.SalesRequest
+namespace Ambev.DeveloperEvaluation.Domain.Entities
 {
-    public class CreateSaleItemRequest
+    public class SaleItemEntity
     {
+        public Guid Id { get; set; }
         public Guid ProductId { get; set; }
-        public string ProductDescription { get; set; }
+        public string? ProductDescription { get; set; }
         public int Quantity { get; set; }
         public decimal UnitPrice { get; set; }
+        public decimal Discount { get; set; }
+        public decimal Total { get; set; }
     }
 }

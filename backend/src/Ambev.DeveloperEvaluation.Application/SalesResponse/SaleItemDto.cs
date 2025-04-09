@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ambev.DeveloperEvaluation.Application.SalesResponse
 {
-    public class SaleItemResponse
+    public class SaleItemDto
     {
         public Guid Id { get; set; }
         public Guid ProductId { get; set; }
