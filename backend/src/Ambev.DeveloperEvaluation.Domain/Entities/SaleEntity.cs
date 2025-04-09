@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Ambev.DeveloperEvaluation.Domain.Entities
 {
-    public class Sale
+    public class SaleEntity
     {
-        public Guid Id { get; set; }
+        public Guid? Id { get; set; }
         public string SaleNumber { get; set; }
         public DateTime SaleDate { get; set; }
         public string Customer { get; set; }
         public string Branch { get; set; }
         public bool IsCancelled { get; set; }
         public decimal TotalAmount { get; set; }
-        public List<SaleItem> Items { get; set; } = new();
+        public List<SaleItemEntity> Items { get; set; } = new();
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ambev.DeveloperEvaluation.Application.SalesResponse
 {
-    public class SaleResponse
+    public class SaleDto
     {
         public Guid Id { get; set; }
         public string SaleNumber { get; set; }
@@ -15,7 +15,7 @@ namespace Ambev.DeveloperEvaluation.Application.SalesResponse
         public string Branch { get; set; }
         public decimal TotalAmount { get; set; }
         public bool IsCancelled { get; set; }
-        public List<SaleItemResponse> Items { get; set; }
+        public List<SaleItemDto> Items { get; set; }
     }
 
 }
